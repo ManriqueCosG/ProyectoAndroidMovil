@@ -35,35 +35,6 @@
         app:layout_constraintVertical_bias="0.739" />
 
 
-
-    <EditText
-        android:id="@+id/etPrecio"
-        android:layout_width="317dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Precio($)"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.663" />
-
-    <EditText
-        android:id="@+id/etTapa"
-        android:layout_width="313dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:hint="Tapa que has probado"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.494" />
-
     <TextView
         android:id="@+id/tvSubtitulo"
         android:layout_width="96dp"
@@ -100,8 +71,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/calcularBtn"
-            android:text="@string/Calcular" />
+            android:text="@string/Calcular"
+            android:textColor="@color/calcularBtn" />
 
     </LinearLayout>
 
@@ -110,10 +81,11 @@
         android:layout_width="0dp"
         android:layout_height="176dp"
         android:contentDescription="Ruta de las tapas"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/banner_tapas" />
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="259dp"
@@ -143,68 +115,93 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:layout_constraintVertical_bias="0.324" />
     -->
-        <CheckBox
-            android:id="@+id/cbEstudiante"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Descuento"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.138"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.964" />
+    <CheckBox
+        android:id="@+id/cbEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Descuento"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.964" />
 
-        <TextView
-            android:id="@+id/tvResumen"
-            android:layout_width="257dp"
-            android:layout_height="47dp"
-            android:text="@string/Resumen"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="257dp"
+        android:layout_height="47dp"
+        android:text="@string/Resumen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="354dp"
         android:layout_height="62dp"
         android:layout_marginTop="116dp"
         android:orientation="horizontal"
         android:padding="8dp"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
             android:id="@+id/b1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="b" />
 
-        <TextView
-            android:id="@+id/info"
-            android:layout_width="96dp"
-            android:layout_height="35dp"
-            android:text=" "
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.101"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.182" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/b2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="a"
             android:textColor="@color/calcularBtn" />
 
-
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="344dp"
+        android:layout_height="74dp"
+
+        app:cardBackgroundColor="#C1E49B"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="6dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.069">
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
