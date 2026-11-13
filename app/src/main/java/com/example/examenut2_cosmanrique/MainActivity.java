@@ -22,7 +22,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-int a = 0;
+    int a = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,17 +37,17 @@ int a = 0;
         Switch s = findViewById(R.id.swMeGusta);
 
         //EditText etBar =  findViewById(R.id.etBar);
-        EditText etTapa =  findViewById(R.id.etTapa);
-        EditText etPrecio =  findViewById(R.id.etPrecio);
+        //EditText etTapa =  findViewById(R.id.etTapa);
+        //EditText etPrecio =  findViewById(R.id.etPrecio);
 
-        Button btnCalcular = findViewById(R.id.btnCalcular);
-        Button btnLimpiar = findViewById(R.id.btnLimpiar);
-        Button b1 = findViewById(R.id.b1);
-        Button b2 = findViewById(R.id.b2);
+        // Button btnCalcular = findViewById(R.id.btnCalcular);
+        // Button btnLimpiar = findViewById(R.id.btnLimpiar);
+        //Button b1 = findViewById(R.id.b1);
+        // Button b2 = findViewById(R.id.b2);
 
 
-        TextView resumen = findViewById(R.id.tvResumen);
-        TextView tvMeGusta = findViewById(R.id.tvMeGusta);
+        // TextView resumen = findViewById(R.id.tvResumen);
+        //  TextView tvMeGusta = findViewById(R.id.tvMeGusta);
         TextView info = findViewById(R.id.info);
 
         CheckBox cbEstudiante = findViewById(R.id.cbEstudiante);
@@ -60,7 +60,7 @@ int a = 0;
         t.add("Tabernas de Calamares");
         t.add("Tabernas de Jamón ibérico");
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        /*b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 a++;
                 String actual = t.get(a);
@@ -80,8 +80,8 @@ int a = 0;
         btnLimpiar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //etBar.setText("");
-                etTapa.setText("");
-                etPrecio.setText("");
+                //etTapa.setText("");
+                //etPrecio.setText("");
 
                 resumen.setText("Aqui aparecera el precio final");
 
@@ -101,7 +101,7 @@ int a = 0;
 
             }
         });
-
+*/
         cbEstudiante.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(@NonNull CompoundButton compoundButton, boolean b) {
@@ -112,20 +112,20 @@ int a = 0;
             }
         });
 
-        btnCalcular.setOnClickListener(new View.OnClickListener() {
+
+            /* btnCalcular.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //String b = String.valueOf(etBar.getText());
-                String t = String.valueOf(etTapa.getText());
-                String p2 = String.valueOf(etPrecio.getText());
+             //  String t = String.valueOf(etTapa.getText());
+               // String p2 = String.valueOf(etPrecio.getText());
 
-                float p8 = etPrecio.getInputType();
+               // float p8 = etPrecio.getInputType();
 
-                String casillaP = String.valueOf(etPrecio.getText());
+                //String casillaP = String.valueOf(etPrecio.getText());
 
-                Double p = Double.parseDouble(p2);
+               // Double p = Double.parseDouble(p2);
 
 
-            /*
                 if(b.isEmpty() && t.isEmpty()){
                     Toast toast = Toast.makeText(MainActivity.this,"Indica el bar y la tapa", Toast.LENGTH_SHORT);
                     toast.show();
@@ -160,10 +160,10 @@ int a = 0;
 
                         }
                     }
-                } */
+                }
 
             }
-        });
+        });*/
 
     }
 }
