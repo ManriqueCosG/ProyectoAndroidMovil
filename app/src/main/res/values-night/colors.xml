@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondo_app">#121212</color>
+    <color name="fondo_tarjeta">#242424</color>
+    <color name="texto_principal">#FFFFFF</color>
+    <color name="texto_secundario">#BDBDBD</color>
+    <color name="color_principal">#FF9A75</color>
+    <color name="color_precio">#E0D5CE</color>
+    <color name="color_divisor">#444444</color>
+    <color name="color_favorito">#FF8066</color>
+    <color name="color_boton_limpiar">#49375C</color>
+    <color name="texto_boton_limpiar">#E2C9FF</color>
+    <color name="color_boton_publicar">#C65C35</color>
+    <color name="color_estrellas">#F5A623</color>
+</resources>

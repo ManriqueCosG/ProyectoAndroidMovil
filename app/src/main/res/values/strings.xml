@@ -1,17 +1,132 @@
 <resources>
-    <string name="app_name">ExamenUT2_CosManrique</string>
-    <string name="nombre_bar">Nombre del bar</string>
-    <string name="Tapa">Tapa que has probado</string>
-    <string name="Precio">Precio($)</string>
+<!-- Títulos -->
+<string name="titulo">GastroVote</string>
+<string name="app_name">ExamenUT2_CosManrique</string>
 
-    <string name="Like">¿Te ha gustado?</string>
+<string name="subtitulo">Ruta de la tapa</string>
+<string name="titulo_resena">TU RESEÑA</string>
+<string name="titulo_resumen">RESUMEN DE LA RESEÑA</string>
 
-    <string name="Limpiar">LIMPIAR</string>
-    <string name="Calcular">CALCULAR PRECIO</string>
+<!-- Selector de bares -->
+<string name="bar_posicion">Bar %1$d de %2$d</string>
+<string name="anterior">‹</string>
+<string name="siguiente">›</string>
 
-    <string name="Descuento">Descuento de estudiante(10%)</string>
-    <string name="Resumen">Aqui aparecera el precio final</string>
-    <string name="titulo">GastroVote</string>
-    <string name="valora">Valora tu tapa</string>
+<string name="calidad_inicial">5/10</string>
+<string name="ayuda_desplazamiento">▼ Sigue al desplazar</string>
+
+<!-- Producto -->
+<string name="favorito">♥</string>
+<string name="valoracion_producto">★★★★☆</string>
+
+<!-- Tamaño -->
+<string name="etiqueta_tamano">Tamaño</string>
+<string name="tamano_tapa">Tapa</string>
+<string name="tamano_media">Media</string>
+<string name="tamano_racion">Ración</string>
+<string name="tamano_media_completo">Media ración</string>
+
+<!-- Puntuación -->
+<string name="etiqueta_puntuacion">Puntuación</string>
+<string name="sin_puntuar">Sin puntuar</string>
+<string name="puntuacion_mejorable">Mejorable</string>
+<string name="puntuacion_correcta">Correcta</string>
+<string name="puntuacion_muy_buena">¡Muy buena!</string>
+<string name="puntuacion_espectacular">¡Espectacular!</string>
+
+<!-- Calidad-precio -->
+<string name="etiqueta_calidad">Calidad-precio</string>
+<string name="calidad_valor">%1$d/10</string>
+
+<!-- Opciones -->
+<string name="etiqueta_vegetariana">Vegetariana</string>
+<string name="etiqueta_sin_gluten">Sin gluten</string>
+<string name="etiqueta_picante">Picante</string>
+<string name="etiqueta_me_gusta">Me gusta</string>
+<string name="pregunta_me_gusta">¿Te gusta esta tapa?</string>
+<string name="descuento_estudiante">Descuento estudiante (10%%)</string>
+
+<!-- Comentario -->
+<string name="pista_opinion">Escribe tu opinión sobre la tapa...</string>
+
+<!-- Botones -->
+<string name="boton_limpiar">LIMPIAR</string>
+<string name="boton_publicar">PUBLICAR RESEÑA</string>
+
+<!-- Toast y mensajes -->
+<string name="toast_puntuar">Puntúa la tapa antes de publicar</string>
+<string name="toast_publicada">¡Reseña publicada!</string>
+<string name="toast_formulario_limpio">Formulario limpiado correctamente</string>
+<string name="toast_anadido_favoritos">Añadido a favoritos</string>
+<string name="toast_quitado_favoritos">Quitado de favoritos</string>
+
+<!-- Valores del resumen -->
+<string name="resumen_tapa">Tapa: %1$s</string>
+<string name="resumen_tamano">Tamaño: %1$s</string>
+<string name="resumen_puntuacion">Puntuación: %1$s/5</string>
+<string name="resumen_calidad">Calidad-precio: %1$d/10</string>
+<string name="resumen_precio_base">Precio base: %1$s</string>
+<string name="resumen_precio_tamano">Precio según tamaño: %1$s</string>
+<string name="resumen_descuento">Descuento estudiante: %1$s</string>
+<string name="resumen_precio_final">Precio final: %1$s</string>
+<string name="resumen_me_gusta">Me gusta: %1$s</string>
+<string name="resumen_etiquetas">Etiquetas: %1$s</string>
+<string name="resumen_comentario">Comentario: %1$s</string>
+
+<!-- Valores generales -->
+<string name="valor_si">Sí</string>
+<string name="valor_no">No</string>
+<string name="valor_ninguna">Ninguna</string>
+<string name="valor_sin_comentario">Sin comentario</string>
+<string name="valor_descuento">10%% (-%1$s)</string>
+<string name="valor_sin_descuento">No</string>
+
+<!-- Descripción de imagen -->
+<string name="descripcion_banner">Ruta de las tapas</string>
+
+<!-- Catálogo de bares: no traducir -->
+<string-array name="bar_nombres" translatable="false">
+    <item>Bar El Gato</item>
+    <item>Bar La Plaza</item>
+    <item>Bar Central</item>
+    <item>Bar Deportivo</item>
+    <item>Bar Avenida</item>
+    <item>Bar Murcia</item>
+    <item>Bar España</item>
+    <item>Bar Nuevo</item>
+</string-array>
+
+<string-array name="bar_tapas" translatable="false">
+    <item>pescadilla</item>
+    <item>Patatas bravas</item>
+    <item>Matrimonio</item>
+    <item>Caballito</item>
+    <item>Zarangollo</item>
+    <item>Michirones</item>
+    <item>Bicicleta</item>
+    <item>Pulpo al horno</item>
+</string-array>
+
+<string-array name="bar_descripciones" translatable="false">
+    <item>Rosquilla con ensaladilla y anchoa</item>
+    <item>Patatas fritas con salsa brava casera</item>
+    <item>Anchoa y boquerón sobre pan</item>
+    <item>Gamba rebozada y frita</item>
+    <item>Revuelto de calabacín, cebolla y huevo</item>
+    <item>Habas cocinadas con jamón y chorizo</item>
+    <item>Rosquilla con ensaladilla rusa</item>
+    <item>Pulpo asado con aceite y limón</item>
+</string-array>
+
+<string-array name="bar_precios" translatable="false">
+    <item>2,50 €</item>
+    <item>3,00 €</item>
+    <item>2,80 €</item>
+    <item>2,50 €</item>
+    <item>3,50 €</item>
+    <item>4,00 €</item>
+    <item>2,00 €</item>
+    <item>4,50 €</item>
+</string-array>
 
 </resources>

@@ -7,6 +7,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo_app"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,20 +15,16 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp">
 
-        <!-- IMAGEN PRINCIPAL -->
-
-
+        <!-- CABECERA -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="176dp"
-            android:contentDescription="Ruta de las tapas"
+            android:contentDescription="@string/descripcion_banner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/banner_tapas" />
-
-        <!-- TITULO -->
 
         <TextView
             android:id="@+id/tvTitulo"
@@ -35,12 +32,12 @@
             android:layout_height="38dp"
             android:layout_marginTop="8dp"
             android:text="@string/titulo"
+            android:textColor="@color/texto_principal"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-        <!-- BOTONES B1 Y B2 -->
-
+        <!-- SELECTOR DE BARES -->
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="354dp"
@@ -57,26 +54,33 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="b" />
+                android:text="@string/anterior" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:textAlignment="center">
 
                 <TextView
                     android:id="@+id/info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=" " />
+                    android:gravity="center"
+                    android:textColor="@color/texto_principal"
+                    android:textAlignment="center"
+                    android:text="" />
 
                 <TextView
                     android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=" " />
+                    android:gravity="center"
+                    android:textColor="@color/texto_principal"
+                    android:textAlignment="center"
+                    android:text="" />
 
             </LinearLayout>
 
@@ -85,19 +89,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="a"
-                android:textColor="@color/calcularBtn" />
+                android:text="@string/siguiente" />
 
         </LinearLayout>
 
-        <!-- TARJETA MARINERA -->
-
+        <!-- TARJETA DEL PRODUCTO -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardProducto"
             android:layout_width="344dp"
-            android:layout_height="74dp"
+            android:layout_height="115dp"
             android:layout_marginTop="12dp"
-            app:cardBackgroundColor="#FFF8F0"
+            app:cardBackgroundColor="@color/fondo_tarjeta"
             app:cardCornerRadius="9dp"
             app:cardElevation="0dp"
             app:cardUseCompatPadding="false"
@@ -108,15 +110,15 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="6dp">
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/txtNombreProducto"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Marinera"
-                    android:textColor="#C65C35"
-                    android:textSize="11sp"
+                    android:text=""
+                    android:textColor="@color/color_principal"
+                    android:textSize="17sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@id/btnFavorito"
                     app:layout_constraintStart_toStartOf="parent"
@@ -124,12 +126,12 @@
 
                 <TextView
                     android:id="@+id/btnFavorito"
-                    android:layout_width="20dp"
+                    android:layout_width="28dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="♥"
-                    android:textColor="#C94722"
-                    android:textSize="16sp"
+                    android:text="@string/favorito"
+                    android:textColor="@color/color_favorito"
+                    android:textSize="22sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,9 +139,10 @@
                     android:id="@+id/txtDescripcionProducto"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Rosquilla con ensaladilla y anchoa"
-                    android:textColor="#99918A"
-                    android:textSize="7sp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="13sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/txtNombreProducto" />
@@ -148,9 +151,9 @@
                     android:id="@+id/txtPrecioProducto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2,50 €"
-                    android:textColor="#62564E"
-                    android:textSize="8sp"
+                    android:text=""
+                    android:textColor="@color/color_precio"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -159,10 +162,10 @@
                     android:id="@+id/txtValoracionProducto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="★★★★☆"
-                    android:textColor="#F5A623"
-                    android:textSize="11sp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/valoracion_producto"
+                    android:textColor="@color/color_estrellas"
+                    android:textSize="17sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/txtPrecioProducto" />
 
@@ -170,14 +173,13 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- TARJETA TU RESEÑA -->
-
+        <!-- TARJETA DE RESEÑA -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardResena"
             android:layout_width="344dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardBackgroundColor="#FFFFFF"
+            app:cardBackgroundColor="@color/fondo_tarjeta"
             app:cardCornerRadius="9dp"
             app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -193,17 +195,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TU RESEÑA"
-                    android:textColor="#C65C35"
+                    android:text="@string/titulo_resena"
+                    android:textColor="@color/color_principal"
                     android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    style="@style/EstiloEtiqueta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Tamaño"
-                    android:textSize="12sp" />
+                    android:text="@string/etiqueta_tamano" />
 
                 <RadioGroup
                     android:id="@+id/rgTamano"
@@ -215,32 +217,35 @@
                         android:id="@+id/rbTapa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tapa"
+                        android:checked="true"
+                        android:text="@string/tamano_tapa"
+                        android:textColor="@color/texto_principal"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbMedia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="Media"
+                        android:text="@string/tamano_media"
+                        android:textColor="@color/texto_principal"
                         android:textSize="11sp" />
 
                     <RadioButton
                         android:id="@+id/rbRacion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ración"
+                        android:text="@string/tamano_racion"
+                        android:textColor="@color/texto_principal"
                         android:textSize="11sp" />
 
                 </RadioGroup>
 
                 <TextView
+                    style="@style/EstiloEtiqueta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Puntuación"
-                    android:textSize="12sp" />
+                    android:text="@string/etiqueta_puntuacion" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -250,28 +255,30 @@
 
                     <RatingBar
                         android:id="@+id/ratingBar"
-                        style="?android:attr/ratingBarStyleSmall"
+                        style="?android:attr/ratingBarStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:numStars="5"
-                        android:rating="4"
+                        android:rating="0"
                         android:stepSize="0.5" />
 
                     <TextView
+                        android:id="@+id/tvValoracion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
-                        android:text="¡Muy buena!"
-                        android:textSize="11sp" />
+                        android:text="@string/sin_puntuar"
+                        android:textColor="@color/texto_principal"
+                        android:textSize="13sp" />
 
                 </LinearLayout>
 
                 <TextView
+                    style="@style/EstiloEtiqueta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Calidad-precio"
-                    android:textSize="12sp" />
+                    android:text="@string/etiqueta_calidad" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -285,14 +292,15 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:max="10"
-                        android:progress="7" />
+                        android:progress="5" />
 
                     <TextView
                         android:id="@+id/tvCalidad"
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="7/10"
+                        android:text="@string/calidad_inicial"
+                        android:textColor="@color/texto_principal"
                         android:textSize="11sp" />
 
                 </LinearLayout>
@@ -302,48 +310,32 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:text="▼ Sigue al desplazar"
-                    android:textColor="#99918A"
+                    android:text="@string/ayuda_desplazamiento"
+                    android:textColor="@color/texto_secundario"
                     android:textSize="10sp" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <!-- SUBTITULO -->
-
-        <!-- ME GUSTA -->
-¡
-        <!-- DESCUENTO ESTUDIANTE -->
-
-        <!-- BOTONES LIMPIAR Y CALCULAR -->
-
-
-
-
-        <!-- BLOQUE OPCIONES Y PUBLICAR RESEÑA -->
-
+        <!-- TARJETA DE OPCIONES -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardOpciones"
             android:layout_width="344dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:layout_marginBottom="20dp"
-            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/fondo_tarjeta"
             app:cardCornerRadius="9dp"
             app:cardElevation="2dp"
-            app:layout_constraintTop_toBottomOf="@id/cardResena"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardResena">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="10dp">
-
-                <!-- CARACTERISTICAS -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -355,7 +347,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Vegetariana"
+                        android:text="@string/etiqueta_vegetariana"
+                        android:textColor="@color/texto_principal"
                         android:textSize="9sp" />
 
                     <CheckBox
@@ -363,7 +356,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Sin gluten"
+                        android:text="@string/etiqueta_sin_gluten"
+                        android:textColor="@color/texto_principal"
                         android:textSize="9sp" />
 
                     <CheckBox
@@ -371,12 +365,11 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Picante"
+                        android:text="@string/etiqueta_picante"
+                        android:textColor="@color/texto_principal"
                         android:textSize="9sp" />
 
                 </LinearLayout>
-
-                <!-- ME GUSTA -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -387,7 +380,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Me gusta"
+                        android:text="@string/etiqueta_me_gusta"
+                        android:textColor="@color/texto_principal"
                         android:textSize="10sp" />
 
                     <Switch
@@ -400,34 +394,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="¿Te gusta esta tapa?"
+                        android:text="@string/pregunta_me_gusta"
+                        android:textColor="@color/texto_principal"
                         android:textSize="10sp" />
 
                 </LinearLayout>
-
-                <!-- DESCUENTO -->
 
                 <CheckBox
                     android:id="@+id/cbEstudiante"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="Descuento estudiante (10%)"
+                    android:text="@string/descuento_estudiante"
+                    android:textColor="@color/texto_principal"
                     android:textSize="10sp" />
-
-                <!-- OPINION -->
 
                 <EditText
                     android:id="@+id/etOpinion"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:background="@android:drawable/edit_text"
-                    android:hint="Muy buena, repetiría la próxima semana"
-                    android:inputType="text"
-                    android:padding="5dp"
-                    android:textSize="10sp" />
-
-                <!-- BOTONES -->
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    android:gravity="top|start"
+                    android:hint="@string/pista_opinion"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLength="200"
+                    android:padding="10dp"
+                    android:textColor="@color/texto_principal"
+                    android:textColorHint="@color/texto_secundario"
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -440,21 +434,19 @@
                         android:layout_width="0dp"
                         android:layout_height="32dp"
                         android:layout_weight="1"
-                        android:backgroundTint="#E9DDF9"
-                        android:text="LIMPIAR"
-                        android:textColor="#76549B"
+                        android:backgroundTint="@color/color_boton_limpiar"
+                        android:text="@string/boton_limpiar"
+                        android:textColor="@color/texto_boton_limpiar"
                         android:textSize="9sp" />
 
                     <Button
                         android:id="@+id/btnPublicar"
+                        style="@style/EstiloBotonPrincipal"
                         android:layout_width="0dp"
                         android:layout_height="32dp"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:backgroundTint="#B83D20"
-                        android:text="PUBLICAR RESEÑA"
-                        android:textColor="#FFFFFF"
-                        android:textSize="9sp" />
+                        android:text="@string/boton_publicar" />
 
                 </LinearLayout>
 
@@ -462,8 +454,54 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!-- TARJETA DEL RESUMEN -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardResumen"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/fondo_tarjeta"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardOpciones">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
+                <TextView
+                    style="@style/EstiloTituloSeccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_resumen" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_divisor" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/color_precio"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="5dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

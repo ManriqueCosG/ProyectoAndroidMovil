@@ -1,0 +1,116 @@
+<resources>
+
+    <string name="titulo">GastroVote</string>
+    <string name="app_name">ExamenUT2_CosManrique</string>
+
+    <string name="subtitulo">Tapas Route</string>
+    <string name="titulo_resena">YOUR REVIEW</string>
+    <string name="titulo_resumen">REVIEW SUMMARY</string>
+
+    <string name="bar_posicion">Bar %1$d of %2$d</string>
+    <string name="anterior">‹</string>
+    <string name="siguiente">›</string>
+    <string name="favorito">♥</string>
+    <string name="valoracion_producto">★★★★☆</string>
+
+    <string name="etiqueta_tamano">Size</string>
+    <string name="tamano_tapa">Tapa</string>
+    <string name="tamano_media">Half</string>
+    <string name="tamano_racion">Full portion</string>
+    <string name="tamano_media_completo">Half portion</string>
+
+    <string name="etiqueta_puntuacion">Rating</string>
+    <string name="sin_puntuar">Not rated</string>
+    <string name="puntuacion_mejorable">Needs improvement</string>
+    <string name="puntuacion_correcta">Fair</string>
+    <string name="puntuacion_muy_buena">Very good!</string>
+    <string name="puntuacion_espectacular">Amazing!</string>
+
+    <string name="etiqueta_calidad">Value for money</string>
+    <string name="calidad_valor">%1$d/10</string>
+    <string name="calidad_inicial">5/10</string>
+
+    <string name="etiqueta_vegetariana">Vegetarian</string>
+    <string name="etiqueta_sin_gluten">Gluten-free</string>
+    <string name="etiqueta_picante">Spicy</string>
+    <string name="etiqueta_me_gusta">I like it</string>
+    <string name="pregunta_me_gusta">Do you like this tapa?</string>
+
+    <string name="descuento_estudiante">Student discount (10%)</string>
+    <string name="pista_opinion">Write your opinion about the tapa...</string>
+    <string name="boton_limpiar">CLEAR</string>
+    <string name="boton_publicar">PUBLISH REVIEW</string>
+
+    <string name="toast_puntuar">Rate the tapa before publishing</string>
+    <string name="toast_publicada">Review published!</string>
+    <string name="toast_formulario_limpio">Form cleared successfully</string>
+    <string name="toast_anadido_favoritos">Added to favourites</string>
+    <string name="toast_quitado_favoritos">Removed from favourites</string>
+
+    <string name="resumen_tapa">Tapa: %1$s</string>
+    <string name="resumen_tamano">Size: %1$s</string>
+    <string name="resumen_puntuacion">Rating: %1$s/5</string>
+    <string name="resumen_calidad">Value for money: %1$d/10</string>
+    <string name="resumen_precio_base">Base price: %1$s</string>
+    <string name="resumen_precio_tamano">Price according to size: %1$s</string>
+    <string name="resumen_descuento">Student discount: %1$s</string>
+    <string name="resumen_precio_final">Final price: %1$s</string>
+    <string name="resumen_me_gusta">I like it: %1$s</string>
+    <string name="resumen_etiquetas">Tags: %1$s</string>
+    <string name="resumen_comentario">Comment: %1$s</string>
+
+    <string name="valor_si">Yes</string>
+    <string name="valor_no">No</string>
+    <string name="valor_ninguna">None</string>
+    <string name="valor_sin_comentario">No comment</string>
+    <string name="valor_descuento">10%% (-%1$s)</string>
+    <string name="valor_sin_descuento">No</string>
+
+    <string name="descripcion_banner">Tapas route</string>
+    <string name="ayuda_desplazamiento">▼ Scroll down</string>
+
+    <string-array name="bar_nombres" translatable="false">
+        <item>Bar El Gato</item>
+        <item>Bar La Plaza</item>
+        <item>Bar Central</item>
+        <item>Bar Deportivo</item>
+        <item>Bar Avenida</item>
+        <item>Bar Murcia</item>
+        <item>Bar España</item>
+        <item>Bar Nuevo</item>
+    </string-array>
+
+    <string-array name="bar_tapas" translatable="false">
+        <item>Marinera</item>
+        <item>Patatas bravas</item>
+        <item>Matrimonio</item>
+        <item>Caballito</item>
+        <item>Zarangollo</item>
+        <item>Michirones</item>
+        <item>Bicicleta</item>
+        <item>Pulpo al horno</item>
+    </string-array>
+
+    <string-array name="bar_descripciones" translatable="false">
+        <item>Rosquilla with Russian salad and anchovy</item>
+        <item>Fried potatoes with homemade spicy sauce</item>
+        <item>Anchovy and vinegar-cured anchovy on bread</item>
+        <item>Breaded and fried prawn</item>
+        <item>Scrambled courgette, onion and egg</item>
+        <item>Broad beans cooked with ham and chorizo</item>
+        <item>Rosquilla with Russian salad</item>
+        <item>Roasted octopus with olive oil and lemon</item>
+    </string-array>
+
+    <string-array name="bar_precios" translatable="false">
+        <item>2.50 €</item>
+        <item>3.00 €</item>
+        <item>2.80 €</item>
+        <item>2.50 €</item>
+        <item>3.50 €</item>
+        <item>4.00 €</item>
+        <item>2.00 €</item>
+        <item>4.50 €</item>
+    </string-array>
+
+</resources>

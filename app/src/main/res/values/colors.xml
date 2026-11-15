@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
-    <color name="calcularBtn">#F45555</color>
+    <color name="fondo_app">#F5F1ED</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#332B26</color>
+    <color name="texto_secundario">#99918A</color>
+    <color name="color_principal">#C65C35</color>
+    <color name="color_precio">#62564E</color>
+    <color name="color_divisor">#E8DDD5</color>
+    <color name="color_favorito">#C94722</color>
+    <color name="color_boton_limpiar">#E9DDF9</color>
+    <color name="texto_boton_limpiar">#76549B</color>
+    <color name="color_boton_publicar">#B83D20</color>
+    <color name="color_estrellas">#F5A623</color>
 </resources>
