@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_app"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <!-- TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/fondo_app"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- IMAGEN DE CABECERA -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="176dp"
+            android:contentDescription="@string/descripcion_banner"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/banner_tapas"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- TARJETA DE INFORMACIÓN -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProducto"
+            android:layout_width="0dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/fondo_tarjeta"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- SALUDO -->
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="¡Hola, Lucía!"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- TÍTULO -->
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Tu ruta de la tapa"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                <!-- PROGRESO -->
+                <TextView
+                    android:id="@+id/tvProgreso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ruta: 3 de 8 bares"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+                <!-- BARRA DE PROGRESO -->
+                <ProgressBar
+                    android:id="@+id/progresoRuta"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="145dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:max="8"
+                    android:progress="3"
+                    android:progressBackgroundTint="#E0E0E0"
+                    android:progressTint="#B83A1D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvProgreso"
+                    app:layout_constraintBottom_toBottomOf="@id/tvProgreso" />
+
+                <!-- ESTADO WIFI -->
+                <TextView
+                    android:id="@+id/tvConexion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_estado_wifi"
+                    android:padding="5dp"
+                    android:text="● Conectado por Wi-Fi"
+                    android:textColor="#388E3C"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProgreso" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- BOTÓN VER RUTA -->
+        <Button
+            android:id="@+id/btnVerRuta"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_boton_ruta"
+            android:text="VER LA RUTA"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintTop_toBottomOf="@id/cardProducto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
