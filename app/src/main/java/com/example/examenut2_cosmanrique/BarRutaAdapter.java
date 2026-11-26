@@ -1,6 +1,7 @@
 
 package com.example.examenut2_cosmanrique;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,23 @@ public class BarRutaAdapter extends RecyclerView.Adapter<BarRutaAdapter.BarViewH
         holder.txtNombreProducto.setText(barActual.nombre);
 
         holder.txtDescripcionProducto.setText(barActual.tapa);
+
+        // DETECTAR CUANDO PULSAMOS UNA TARJETA
+        holder.itemView.setOnClickListener(v -> {
+
+            // CREAR EL INTENT
+            Intent intent = new Intent(v.getContext(), Ficha.class);
+
+            // ENVIAR LOS DATOS DEL BAR
+            intent.putExtra("nombre", barActual.nombre);
+            intent.putExtra("tapa", barActual.tapa);
+            intent.putExtra("descripcion", barActual.descripcion);
+            intent.putExtra("precio", barActual.precio);
+
+            // ABRIR LA ACTIVITY
+            v.getContext().startActivity(intent);
+
+        });
 
     }
 
