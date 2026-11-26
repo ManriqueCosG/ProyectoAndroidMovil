@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenUT2_CosManrique">
         <activity
+            android:name=".Nueva"
+            android:exported="false" />
+        <activity
             android:name=".Ficha"
             android:exported="false" />
         <activity

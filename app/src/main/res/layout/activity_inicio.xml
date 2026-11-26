@@ -131,20 +131,14 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- BOTÓN VER RUTA -->
         <Button
             android:id="@+id/btnVerRuta"
+            style="@style/BotonGastroVote"
             android:layout_width="0dp"
-            android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg_boton_ruta"
             android:text="VER LA RUTA"
-            android:textColor="@android:color/white"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
             app:layout_constraintTop_toBottomOf="@id/cardProducto"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
